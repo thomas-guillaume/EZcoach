@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  EZcoach
 //
-//  Created by Thomas Guillaume on 26/11/2018.
-//  Copyright © 2018 Thomas Guillaume. All rights reserved.
+//  Created by Thomas Guillaume and Mathieu Pillot on 26/11/2018.
+//  Copyright © 2018 Thomas Guillaume & Mathieu Pillot. All rights reserved.
 //
 
 import UIKit
