@@ -17,6 +17,16 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="95y-ZZ-r9H">
+                                <rect key="frame" x="197" y="307" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="5MY-Pt-AU8" kind="presentation" modalTransitionStyle="crossDissolve" id="Lt0-In-NOO"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -25,50 +35,103 @@
             </objects>
             <point key="canvasLocation" x="151" y="134"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="eLy-M0-ig8">
+        <!--Home-->
+        <scene sceneID="wb5-RK-SsC">
             <objects>
-                <viewController id="Xoj-0n-ptI" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="cEK-Se-Ol6">
+                <viewController id="5MY-Pt-AU8" customClass="Home" customModule="EZcoach" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GR5-gO-cCv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q0F-UX-5ij">
+                                <rect key="frame" x="0.0" y="624" width="375" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="jWn-MC-7zc"/>
+                        <viewLayoutGuide key="safeArea" id="1D2-qS-bnI"/>
                     </view>
+                    <toolbarItems>
+                        <barButtonItem title="Home" width="125" id="yLf-Ib-GkL"/>
+                        <barButtonItem title="Test" width="125" id="VwQ-hZ-lQg">
+                            <connections>
+                                <segue destination="Sis-3K-6bd" kind="presentation" modalTransitionStyle="crossDissolve" id="VP6-0R-HFf"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem title="Account" width="125" id="jhF-ed-Ncm">
+                            <connections>
+                                <segue destination="tR6-RJ-vou" kind="presentation" modalTransitionStyle="crossDissolve" id="Ffj-q1-4SP"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="s9e-Ag-xdc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sof-xW-6rX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="857" y="134"/>
+            <point key="canvasLocation" x="928.79999999999995" y="143.47826086956522"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="0YX-nd-l4m">
+        <!--Test-->
+        <scene sceneID="QsL-Qm-QrD">
             <objects>
-                <viewController id="ojY-tr-0SA" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Sru-le-1kQ">
+                <viewController id="Sis-3K-6bd" customClass="Test" customModule="EZcoach" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rrw-DE-Yjx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="2v8-Y4-Eqt"/>
+                        <viewLayoutGuide key="safeArea" id="7PD-Bt-utt"/>
                     </view>
+                    <toolbarItems>
+                        <barButtonItem title="Home" width="125" id="Gtq-QX-Ts1">
+                            <connections>
+                                <segue destination="5MY-Pt-AU8" kind="presentation" modalTransitionStyle="crossDissolve" id="Td0-fW-M5s"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem title="Test" width="125" id="liv-LU-Mbg"/>
+                        <barButtonItem title="Account" width="125" id="xuj-nL-gvb">
+                            <connections>
+                                <segue destination="tR6-RJ-vou" kind="presentation" modalTransitionStyle="crossDissolve" id="cNx-5O-yVf"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Xop-j5-yxg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FXQ-iT-LEM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1580" y="134"/>
+            <point key="canvasLocation" x="1711" y="155"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="adf-ZU-gq5">
+        <!--Account-->
+        <scene sceneID="Hhw-qy-gIt">
             <objects>
-                <viewController id="DY0-eN-4A5" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Ifn-Qc-LiT">
+                <viewController id="tR6-RJ-vou" customClass="Account" customModule="EZcoach" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2Dj-KM-Uyh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="khc-ok-519"/>
+                        <viewLayoutGuide key="safeArea" id="VGS-1r-6dm"/>
                     </view>
+                    <toolbarItems>
+                        <barButtonItem title="Home" width="125" id="1bC-rD-7i3">
+                            <connections>
+                                <segue destination="5MY-Pt-AU8" kind="presentation" modalTransitionStyle="crossDissolve" id="Eyr-aE-MaB"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem title="Test" width="125" id="EQQ-ei-Ea5">
+                            <connections>
+                                <segue destination="Sis-3K-6bd" kind="presentation" modalTransitionStyle="crossDissolve" id="jFu-Jg-1Wh"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem title="Account" width="125" id="0D2-Kb-k8W"/>
+                    </toolbarItems>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="VH5-Wy-LeY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PhN-uo-mwh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2297" y="134"/>
+            <point key="canvasLocation" x="2473" y="162"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Ffj-q1-4SP"/>
+        <segue reference="VP6-0R-HFf"/>
+        <segue reference="Lt0-In-NOO"/>
+    </inferredMetricsTieBreakers>
 </document>
