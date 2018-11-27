@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BCz-Xr-lZ0">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,128 +10,149 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Navigation Controller-->
+        <scene sceneID="pgJ-59-xHz">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="EZcoach" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="95y-ZZ-r9H">
-                                <rect key="frame" x="197" y="307" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="5MY-Pt-AU8" kind="presentation" modalTransitionStyle="crossDissolve" id="Lt0-In-NOO"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <navigationController toolbarHidden="NO" id="BCz-Xr-lZ0" sceneMemberID="viewController">
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qSi-do-JGY">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="m6q-iK-azU">
+                        <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="Bbd-aS-4wV" kind="relationship" relationship="rootViewController" id="4Hp-Cs-Vmk"/>
+                        <segue destination="0bO-Fc-fAZ" kind="presentation" id="3tp-EI-qIN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y02-rV-8a0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="151" y="134"/>
+            <point key="canvasLocation" x="-2449" y="-359"/>
         </scene>
         <!--Home-->
-        <scene sceneID="wb5-RK-SsC">
+        <scene sceneID="kdq-bG-mn9">
             <objects>
-                <viewController id="5MY-Pt-AU8" customClass="Home" customModule="EZcoach" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="GR5-gO-cCv">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <viewController id="Bbd-aS-4wV" customClass="Home" customModule="EZcoach" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VgZ-wJ-Zqs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q0F-UX-5ij">
-                                <rect key="frame" x="0.0" y="624" width="375" height="43"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aNq-wD-Nle">
+                                <rect key="frame" x="166" y="301" width="46" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </stackView>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="1D2-qS-bnI"/>
+                        <viewLayoutGuide key="safeArea" id="bRe-oS-Q1S"/>
                     </view>
                     <toolbarItems>
-                        <barButtonItem title="Home" width="125" id="yLf-Ib-GkL"/>
-                        <barButtonItem title="Test" width="125" id="VwQ-hZ-lQg">
+                        <barButtonItem title="Home" width="125" id="hMY-ND-7fH"/>
+                        <barButtonItem title="Test" width="125" id="6eU-HY-fQY">
                             <connections>
-                                <segue destination="Sis-3K-6bd" kind="presentation" modalTransitionStyle="crossDissolve" id="VP6-0R-HFf"/>
+                                <segue destination="0bO-Fc-fAZ" kind="show" id="mdu-UY-d2b"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem title="Account" width="125" id="jhF-ed-Ncm">
+                        <barButtonItem title="Account" width="125" id="Que-TG-haQ">
                             <connections>
-                                <segue destination="tR6-RJ-vou" kind="presentation" modalTransitionStyle="crossDissolve" id="Ffj-q1-4SP"/>
+                                <segue destination="mDi-Ad-fGp" kind="show" id="Iec-jT-1Nf"/>
                             </connections>
                         </barButtonItem>
                     </toolbarItems>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationItem key="navigationItem" id="T4r-Iw-FNr"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Sof-xW-6rX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uD5-TC-oSB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="928.79999999999995" y="143.47826086956522"/>
+            <point key="canvasLocation" x="-1612" y="-359"/>
         </scene>
         <!--Test-->
-        <scene sceneID="QsL-Qm-QrD">
+        <scene sceneID="W5x-8m-RWS">
             <objects>
-                <viewController id="Sis-3K-6bd" customClass="Test" customModule="EZcoach" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="rrw-DE-Yjx">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <viewController id="0bO-Fc-fAZ" customClass="Test" customModule="EZcoach" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="y9U-p1-aka">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ui0-Vx-dAX">
+                                <rect key="frame" x="166" y="301" width="33" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="7PD-Bt-utt"/>
+                        <viewLayoutGuide key="safeArea" id="O3l-zW-KNJ"/>
                     </view>
                     <toolbarItems>
-                        <barButtonItem title="Home" width="125" id="Gtq-QX-Ts1">
+                        <barButtonItem title="Home" width="125" id="qYK-UQ-fd7">
                             <connections>
-                                <segue destination="5MY-Pt-AU8" kind="presentation" modalTransitionStyle="crossDissolve" id="Td0-fW-M5s"/>
+                                <segue destination="Bbd-aS-4wV" kind="show" id="f55-0l-nD2"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem title="Test" width="125" id="liv-LU-Mbg"/>
-                        <barButtonItem title="Account" width="125" id="xuj-nL-gvb">
+                        <barButtonItem title="Test" width="125" id="53o-Uv-GTC"/>
+                        <barButtonItem title="Account" width="125" id="D1B-i7-J3I">
                             <connections>
-                                <segue destination="tR6-RJ-vou" kind="presentation" modalTransitionStyle="crossDissolve" id="cNx-5O-yVf"/>
+                                <segue destination="mDi-Ad-fGp" kind="show" id="fLu-8K-ZUu"/>
                             </connections>
                         </barButtonItem>
                     </toolbarItems>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationItem key="navigationItem" id="4fM-W4-VIS"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="FXQ-iT-LEM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lhM-ld-a6v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1711" y="155"/>
+            <point key="canvasLocation" x="-754.39999999999998" y="-359.37031484257875"/>
         </scene>
         <!--Account-->
-        <scene sceneID="Hhw-qy-gIt">
+        <scene sceneID="seL-PF-WEd">
             <objects>
-                <viewController id="tR6-RJ-vou" customClass="Account" customModule="EZcoach" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="2Dj-KM-Uyh">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <viewController id="mDi-Ad-fGp" customClass="Account" customModule="EZcoach" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nL7-qy-GjM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h7e-Q9-Are">
+                                <rect key="frame" x="166" y="301" width="64" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="VGS-1r-6dm"/>
+                        <viewLayoutGuide key="safeArea" id="N45-hV-Cq3"/>
                     </view>
                     <toolbarItems>
-                        <barButtonItem title="Home" width="125" id="1bC-rD-7i3">
+                        <barButtonItem title="Home" width="125" id="v1Z-gC-Q5o">
                             <connections>
-                                <segue destination="5MY-Pt-AU8" kind="presentation" modalTransitionStyle="crossDissolve" id="Eyr-aE-MaB"/>
+                                <segue destination="Bbd-aS-4wV" kind="show" id="Uyl-Ry-5SD"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem title="Test" width="125" id="EQQ-ei-Ea5">
+                        <barButtonItem title="Test" width="125" id="lkD-E1-eFm">
                             <connections>
-                                <segue destination="Sis-3K-6bd" kind="presentation" modalTransitionStyle="crossDissolve" id="jFu-Jg-1Wh"/>
+                                <segue destination="0bO-Fc-fAZ" kind="show" id="2sf-eo-2MW"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem title="Account" width="125" id="0D2-Kb-k8W"/>
+                        <barButtonItem title="Account" width="125" id="CdH-TA-xPa"/>
                     </toolbarItems>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationItem key="navigationItem" id="7sg-hM-5fy"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PhN-uo-mwh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FI9-Fg-bgp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2473" y="162"/>
+            <point key="canvasLocation" x="34" y="-356"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Ffj-q1-4SP"/>
-        <segue reference="VP6-0R-HFf"/>
-        <segue reference="Lt0-In-NOO"/>
+        <segue reference="fLu-8K-ZUu"/>
+        <segue reference="2sf-eo-2MW"/>
+        <segue reference="f55-0l-nD2"/>
     </inferredMetricsTieBreakers>
 </document>
