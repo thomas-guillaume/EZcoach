@@ -24,7 +24,7 @@
                                     <constraint firstAttribute="height" constant="60" id="hIc-Wd-7VG"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="50"/>
-                                <color key="textColor" red="0.1372409462928772" green="0.1372627317905426" blue="0.13723355531692505" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.27840718626976013" green="0.27844494581222534" blue="0.27839437127113342" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="moy-ok-PlF">
@@ -50,6 +50,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="logo.png" width="380" height="380"/>
+        <image name="logo.png" width="256" height="256"/>
     </resources>
 </document>
