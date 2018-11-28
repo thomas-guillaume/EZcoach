@@ -1,5 +1,5 @@
 //
-//  Test.swift
+//  Settings.swift
 //  EZcoach
 //
 //  Created by Mathieu on 26/11/2018.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Test: UIViewController {
+class Settings: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

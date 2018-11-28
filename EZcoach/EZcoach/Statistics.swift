@@ -1,5 +1,5 @@
 //
-//  Account.swift
+//  Statistics.swift
 //  EZcoach
 //
 //  Created by Mathieu on 26/11/2018.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Account: UIViewController {
+class Statistics: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

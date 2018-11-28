@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BCz-Xr-lZ0">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -16,11 +16,11 @@
                 <navigationController toolbarHidden="NO" id="BCz-Xr-lZ0" sceneMemberID="viewController">
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qSi-do-JGY">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="m6q-iK-azU">
-                        <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="436" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </toolbar>
                     <connections>
@@ -37,28 +37,57 @@
             <objects>
                 <viewController id="Bbd-aS-4wV" customClass="Home" customModule="EZcoach" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VgZ-wJ-Zqs">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="436"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aNq-wD-Nle">
-                                <rect key="frame" x="166" y="301" width="46" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="Ujb-15-Gq2">
+                                <rect key="frame" x="75" y="132" width="170" height="172"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bua-m7-Tq7">
+                                        <rect key="frame" x="0.0" y="0.0" width="170" height="36"/>
+                                        <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="170" id="TSk-IM-Mfy"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <size key="titleShadowOffset" width="2" height="2"/>
+                                        <state key="normal" title="DAILY TRAINING">
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Opu-0g-wEo">
+                                        <rect key="frame" x="0.0" y="136" width="170" height="36"/>
+                                        <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <size key="titleShadowOffset" width="2" height="2"/>
+                                        <state key="normal" title="TEST MAX REP">
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ujb-15-Gq2" firstAttribute="centerY" secondItem="VgZ-wJ-Zqs" secondAttribute="centerY" id="5zi-Os-nVY"/>
+                            <constraint firstItem="Ujb-15-Gq2" firstAttribute="centerX" secondItem="VgZ-wJ-Zqs" secondAttribute="centerX" id="WGJ-Kw-Pwz"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="bRe-oS-Q1S"/>
                     </view>
                     <toolbarItems>
-                        <barButtonItem title="Home" width="125" id="hMY-ND-7fH"/>
-                        <barButtonItem title="Test" width="125" id="6eU-HY-fQY">
+                        <barButtonItem title="Home" width="125" style="done" id="hMY-ND-7fH">
+                            <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                        <barButtonItem title="Statistics" width="125" id="6eU-HY-fQY">
+                            <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <segue destination="0bO-Fc-fAZ" kind="show" id="mdu-UY-d2b"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem title="Account" width="125" id="Que-TG-haQ">
+                            <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <segue destination="mDi-Ad-fGp" kind="show" id="Iec-jT-1Nf"/>
                             </connections>
@@ -71,33 +100,28 @@
             </objects>
             <point key="canvasLocation" x="-1612" y="-359"/>
         </scene>
-        <!--Test-->
+        <!--Statistics-->
         <scene sceneID="W5x-8m-RWS">
             <objects>
-                <viewController id="0bO-Fc-fAZ" customClass="Test" customModule="EZcoach" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="0bO-Fc-fAZ" customClass="Statistics" customModule="EZcoach" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="y9U-p1-aka">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="436"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ui0-Vx-dAX">
-                                <rect key="frame" x="166" y="301" width="33" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="O3l-zW-KNJ"/>
                     </view>
                     <toolbarItems>
                         <barButtonItem title="Home" width="125" id="qYK-UQ-fd7">
+                            <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <segue destination="Bbd-aS-4wV" kind="show" id="f55-0l-nD2"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem title="Test" width="125" id="53o-Uv-GTC"/>
-                        <barButtonItem title="Account" width="125" id="D1B-i7-J3I">
+                        <barButtonItem title="Statistics" width="125" style="done" id="53o-Uv-GTC">
+                            <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                        <barButtonItem title="Settings" width="125" id="D1B-i7-J3I">
+                            <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <segue destination="mDi-Ad-fGp" kind="show" id="fLu-8K-ZUu"/>
                             </connections>
@@ -110,37 +134,32 @@
             </objects>
             <point key="canvasLocation" x="-754.39999999999998" y="-359.37031484257875"/>
         </scene>
-        <!--Account-->
+        <!--Settings-->
         <scene sceneID="seL-PF-WEd">
             <objects>
-                <viewController id="mDi-Ad-fGp" customClass="Account" customModule="EZcoach" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="mDi-Ad-fGp" customClass="Settings" customModule="EZcoach" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nL7-qy-GjM">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="436"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h7e-Q9-Are">
-                                <rect key="frame" x="166" y="301" width="64" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="N45-hV-Cq3"/>
                     </view>
                     <toolbarItems>
                         <barButtonItem title="Home" width="125" id="v1Z-gC-Q5o">
+                            <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <segue destination="Bbd-aS-4wV" kind="show" id="Uyl-Ry-5SD"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem title="Test" width="125" id="lkD-E1-eFm">
+                        <barButtonItem title="Statistics" width="125" id="lkD-E1-eFm">
+                            <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <segue destination="0bO-Fc-fAZ" kind="show" id="2sf-eo-2MW"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem title="Account" width="125" id="CdH-TA-xPa"/>
+                        <barButtonItem title="Settings" width="125" style="done" id="CdH-TA-xPa">
+                            <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
                     </toolbarItems>
                     <navigationItem key="navigationItem" id="7sg-hM-5fy"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
@@ -151,8 +170,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="fLu-8K-ZUu"/>
-        <segue reference="3tp-EI-qIN"/>
-        <segue reference="f55-0l-nD2"/>
+        <segue reference="Iec-jT-1Nf"/>
+        <segue reference="mdu-UY-d2b"/>
+        <segue reference="Uyl-Ry-5SD"/>
     </inferredMetricsTieBreakers>
 </document>
