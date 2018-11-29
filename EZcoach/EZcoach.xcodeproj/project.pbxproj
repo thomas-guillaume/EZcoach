@@ -10,6 +10,7 @@
 		4EDDD81521ACDC6100F87812 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDDD81421ACDC6100F87812 /* Home.swift */; };
 		4EDDD81721ACDC8700F87812 /* Statistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDDD81621ACDC8700F87812 /* Statistics.swift */; };
 		4EDDD81921ACDCA500F87812 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDDD81821ACDCA500F87812 /* Settings.swift */; };
+		4EE8C47D21AFF9460023805E /* TimerClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE8C47C21AFF9450023805E /* TimerClass.swift */; };
 		E94F43D721ABEB1D001A1C8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94F43D621ABEB1D001A1C8E /* AppDelegate.swift */; };
 		E94F43D921ABEB1D001A1C8E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94F43D821ABEB1D001A1C8E /* ViewController.swift */; };
 		E94F43DC21ABEB1D001A1C8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E94F43DA21ABEB1D001A1C8E /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 		4EDDD81421ACDC6100F87812 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		4EDDD81621ACDC8700F87812 /* Statistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Statistics.swift; sourceTree = "<group>"; };
 		4EDDD81821ACDCA500F87812 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		4EE8C47C21AFF9450023805E /* TimerClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimerClass.swift; path = ../../../../.Trash/TimerClass.swift; sourceTree = "<group>"; };
 		E94F43D321ABEB1D001A1C8E /* EZcoach.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EZcoach.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E94F43D621ABEB1D001A1C8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E94F43D821ABEB1D001A1C8E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 				4EDDD81421ACDC6100F87812 /* Home.swift */,
 				4EDDD81621ACDC8700F87812 /* Statistics.swift */,
 				4EDDD81821ACDCA500F87812 /* Settings.swift */,
+				4EE8C47C21AFF9450023805E /* TimerClass.swift */,
 				E94F43DA21ABEB1D001A1C8E /* Main.storyboard */,
 				E94F43DD21ABEB1F001A1C8E /* Assets.xcassets */,
 				E95EFFA621AE3297003CA530 /* logo.png */,
@@ -152,6 +155,7 @@
 				E94F43D921ABEB1D001A1C8E /* ViewController.swift in Sources */,
 				4EDDD81721ACDC8700F87812 /* Statistics.swift in Sources */,
 				4EDDD81521ACDC6100F87812 /* Home.swift in Sources */,
+				4EE8C47D21AFF9460023805E /* TimerClass.swift in Sources */,
 				E94F43D721ABEB1D001A1C8E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
