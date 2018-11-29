@@ -10,6 +10,9 @@ import UIKit
 
 class Settings: UIViewController {
 
+    @IBOutlet weak var notifications: UISwitch!
+    @IBOutlet weak var timePicker: UIDatePicker!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,5 +29,22 @@ class Settings: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    @IBAction func SetNotifications(_ sender: UISwitch) {
+        if notifications.isOn {
+            timePicker.isHidden = false
+        } else {
+            timePicker.isHidden = true
+        }
+    }
+    
+    
+    // Schedule notifications
+    @IBAction func notification_time(_ sender: UIDatePicker) {
+       
+    }
+    
+    
+    
 
 }
