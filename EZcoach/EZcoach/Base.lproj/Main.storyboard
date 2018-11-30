@@ -279,8 +279,8 @@
                                                     <constraint firstAttribute="width" constant="200" id="49r-6g-KrG"/>
                                                     <constraint firstAttribute="height" constant="150" id="77Q-HY-pj0"/>
                                                 </constraints>
-                                                <date key="date" timeIntervalSinceReferenceDate="565097400.14363694">
-                                                    <!--2018-11-28 11:30:00 +0000-->
+                                                <date key="date" timeIntervalSinceReferenceDate="565027200.14363694">
+                                                    <!--2018-11-27 16:00:00 +0000-->
                                                 </date>
                                                 <connections>
                                                     <action selector="notification_time:" destination="mDi-Ad-fGp" eventType="valueChanged" id="CaJ-u1-Wpn"/>
@@ -300,6 +300,9 @@
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5rH-6O-Ndx">
                                                 <rect key="frame" x="151" y="0.0" width="51" height="31"/>
                                                 <color key="onTintColor" red="0.9343021373" green="0.0" blue="0.022582336339999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="setAppSound:" destination="mDi-Ad-fGp" eventType="valueChanged" id="qhr-KA-qKf"/>
+                                                </connections>
                                             </switch>
                                         </subviews>
                                     </stackView>
@@ -334,6 +337,7 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
                     <connections>
                         <outlet property="notifications" destination="3c0-OX-Mmx" id="8Jd-FP-XEM"/>
+                        <outlet property="sound" destination="5rH-6O-Ndx" id="Zzw-st-ag7"/>
                         <outlet property="timePicker" destination="006-LC-XFc" id="Y92-sk-be7"/>
                     </connections>
                 </viewController>
@@ -621,7 +625,7 @@
     <inferredMetricsTieBreakers>
         <segue reference="lok-GE-MyB"/>
         <segue reference="Iec-jT-1Nf"/>
-        <segue reference="mdu-UY-d2b"/>
+        <segue reference="2sf-eo-2MW"/>
         <segue reference="Uyl-Ry-5SD"/>
     </inferredMetricsTieBreakers>
 </document>

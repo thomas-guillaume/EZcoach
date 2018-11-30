@@ -12,29 +12,44 @@ class Settings: UIViewController {
 
     @IBOutlet weak var notifications: UISwitch!
     @IBOutlet weak var timePicker: UIDatePicker!
+    @IBOutlet weak var sound: UISwitch!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    override func viewDidAppear(_ animated: Bool) {
+        // Initialize the switch boxes to their saved state
+        if let x = UserDefaults.standard.object(forKey : "notifications") as? Bool {
+            if x == true {
+                notifications.isOn = true
+            } else if x == false {
+                notifications.isOn = false
+                timePicker.isHidden = true
+            }
+        }
+        
+        if let x = UserDefaults.standard.object(forKey : "sound") as? Bool {
+            if x == true {
+                sound.isOn = true
+            } else if x == false {
+                sound.isOn = false
+            }
+        }
     }
-    */
+    
     
     @IBAction func SetNotifications(_ sender: UISwitch) {
         if notifications.isOn {
+            // Show the time picker and save the state in the app
             timePicker.isHidden = false
+            UserDefaults.standard.set(true, forKey: "notifications")
         } else {
+            // Hide the time picker and save the state in the app
             timePicker.isHidden = true
+            UserDefaults.standard.set(false, forKey: "notifications")
         }
     }
     
@@ -45,6 +60,13 @@ class Settings: UIViewController {
     }
     
     
+    @IBAction func setAppSound(_ sender: UISwitch) {
+        if sound.isOn {
+            UserDefaults.standard.set(true, forKey: "sound")
+        } else {
+            UserDefaults.standard.set(false, forKey: "sound")
+        }
+    }
     
 
 }
