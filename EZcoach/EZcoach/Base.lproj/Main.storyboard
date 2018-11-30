@@ -46,8 +46,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="czp-vx-bun">
-                                <rect key="frame" x="0.5" y="197.5" width="319.5" height="41"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="czp-vx-bun">
+                                <rect key="frame" x="0.5" y="164" width="319.5" height="108.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do your maximum push-ups repetitions in" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Xz-9s-0aU">
                                         <rect key="frame" x="0.0" y="0.0" width="319.5" height="20.5"/>
@@ -56,11 +56,21 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1:00 min" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fvQ-hi-7vp">
-                                        <rect key="frame" x="0.0" y="20.5" width="319.5" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <rect key="frame" x="0.0" y="40.5" width="319.5" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OBQ-6j-hUY">
+                                        <rect key="frame" x="0.0" y="78.5" width="319.5" height="30"/>
+                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="15"/>
+                                        <state key="normal" title="See how to do push-ups here">
+                                            <color key="titleColor" red="0.9343021373" green="0.0" blue="0.022582336339999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="8pI-2U-HkQ" kind="show" id="1vO-KG-C4X"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JgJ-KG-Zg6">
@@ -789,11 +799,26 @@
             </objects>
             <point key="canvasLocation" x="86" y="1555"/>
         </scene>
+        <!--Video Controller-->
+        <scene sceneID="buf-5O-wOO">
+            <objects>
+                <viewController id="8pI-2U-HkQ" customClass="VideoController" customModule="EZcoach" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="k47-5l-vVG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="436"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="CpG-0n-JPB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HYn-aR-KT6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1598" y="618"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="5xo-7q-gcI"/>
         <segue reference="Iec-jT-1Nf"/>
         <segue reference="mdu-UY-d2b"/>
-        <segue reference="f55-0l-nD2"/>
+        <segue reference="yoP-Gw-eif"/>
     </inferredMetricsTieBreakers>
 </document>
