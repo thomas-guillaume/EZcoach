@@ -14,6 +14,7 @@
 		4EE8F1FE21B1AC400074E188 /* EndTrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE8F1FD21B1AC400074E188 /* EndTrain.swift */; };
 		4EE8F20121B1AC4B0074E188 /* Timer3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE8F1FF21B1AC4A0074E188 /* Timer3.swift */; };
 		4EE8F20221B1AC4B0074E188 /* Timer2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE8F20021B1AC4B0074E188 /* Timer2.swift */; };
+		4EE8F20421B1B3950074E188 /* EIAfM.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EE8F20321B1B3940074E188 /* EIAfM.png */; };
 		E91BF5AF21B156AD0027A623 /* VideoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91BF5AE21B156AD0027A623 /* VideoController.swift */; };
 		E91BF5B121B183DF0027A623 /* pushups.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E91BF5B021B183DF0027A623 /* pushups.mp4 */; };
 		E94F43D721ABEB1D001A1C8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94F43D621ABEB1D001A1C8E /* AppDelegate.swift */; };
@@ -34,6 +35,7 @@
 		4EE8F1FD21B1AC400074E188 /* EndTrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndTrain.swift; sourceTree = "<group>"; };
 		4EE8F1FF21B1AC4A0074E188 /* Timer3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timer3.swift; sourceTree = "<group>"; };
 		4EE8F20021B1AC4B0074E188 /* Timer2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timer2.swift; sourceTree = "<group>"; };
+		4EE8F20321B1B3940074E188 /* EIAfM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EIAfM.png; sourceTree = "<group>"; };
 		E91BF5AE21B156AD0027A623 /* VideoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoController.swift; sourceTree = "<group>"; };
 		E91BF5B021B183DF0027A623 /* pushups.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = pushups.mp4; sourceTree = "<group>"; };
 		E94F43D321ABEB1D001A1C8E /* EZcoach.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EZcoach.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,6 +95,7 @@
 				E91BF5AE21B156AD0027A623 /* VideoController.swift */,
 				E94F43DA21ABEB1D001A1C8E /* Main.storyboard */,
 				E94F43DD21ABEB1F001A1C8E /* Assets.xcassets */,
+				4EE8F20321B1B3940074E188 /* EIAfM.png */,
 				E95EFFA621AE3297003CA530 /* logo.png */,
 				E94F43DF21ABEB1F001A1C8E /* LaunchScreen.storyboard */,
 				E94F43E221ABEB1F001A1C8E /* Info.plist */,
@@ -162,6 +165,7 @@
 				E91BF5B121B183DF0027A623 /* pushups.mp4 in Resources */,
 				E94F43E121ABEB1F001A1C8E /* LaunchScreen.storyboard in Resources */,
 				E94F43DE21ABEB1F001A1C8E /* Assets.xcassets in Resources */,
+				4EE8F20421B1B3950074E188 /* EIAfM.png in Resources */,
 				E94F43DC21ABEB1D001A1C8E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
