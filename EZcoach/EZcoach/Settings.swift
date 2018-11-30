@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import UserNotifications
 
 class Settings: UIViewController {
 
@@ -17,6 +18,7 @@ class Settings: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge], completionHandler: {didAllow, error in })
     }
     
     
@@ -56,7 +58,18 @@ class Settings: UIViewController {
     
     // Schedule notifications
     @IBAction func notification_time(_ sender: UIDatePicker) {
-       
+        let content = UNMutableNotificationContent()
+        content.title = "Time for your daily training !"
+        content.body = "Ready to workout ?"
+        content.badge = 1
+        
+        let interval: Double = timePicker.date.timeIntervalSinceNow
+        if interval > 0 {
+            let trigger = UNTimeIntervalNotificationTrigger(timeInterval: interval, repeats: false)
+            
+            let request = UNNotificationRequest(identifier : "timerDone", content: content, trigger: trigger)
+            UNUserNotificationCenter.current().add(request,withCompletionHandler: nil)
+        }
     }
     
     
