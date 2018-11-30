@@ -389,7 +389,7 @@
             <objects>
                 <viewController id="vkh-vi-elF" customClass="TimerClass" customModule="EZcoach" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KYm-4L-nrF">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="436"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="REST" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tlw-pz-TUH">
@@ -507,7 +507,7 @@
         <!--View Controller-->
         <scene sceneID="O8c-dl-8QK">
             <objects>
-                <viewController id="Mjk-qL-Hge" sceneMemberID="viewController">
+                <viewController restorationIdentifier="serie2" storyboardIdentifier="serie2" id="Mjk-qL-Hge" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hQ0-jQ-5W5">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -546,7 +546,7 @@
         <!--View Controller-->
         <scene sceneID="yrD-VO-LGG">
             <objects>
-                <viewController id="jws-aY-isJ" sceneMemberID="viewController">
+                <viewController restorationIdentifier="serie3" storyboardIdentifier="serie3" id="jws-aY-isJ" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JkA-oX-XLO">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -585,7 +585,7 @@
         <!--View Controller-->
         <scene sceneID="E26-bM-Y9X">
             <objects>
-                <viewController id="EFZ-Nq-sbE" sceneMemberID="viewController">
+                <viewController restorationIdentifier="serie4" storyboardIdentifier="serie4" id="EFZ-Nq-sbE" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="18d-Bo-fQE">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -623,7 +623,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="lok-GE-MyB"/>
+        <segue reference="5xo-7q-gcI"/>
         <segue reference="Iec-jT-1Nf"/>
         <segue reference="2sf-eo-2MW"/>
         <segue reference="Uyl-Ry-5SD"/>
