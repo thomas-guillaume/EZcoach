@@ -29,10 +29,15 @@ class TimerTest: UIViewController {
     @objc func fireTimer() {
         if(time > 0)
         {
-            time -= 1
             //This will decrement(count down)the seconds.
-            timerLabel.text = "00:\(time)"
+            time -= 1
+            
             //This will update the label.
+            if time < 10 {
+                timerLabel.text = "00:0\(time)"
+            } else {
+                timerLabel.text = "00:\(time)"
+            }
         } else {
             goTo(view: "endTest")
         }

@@ -63,9 +63,12 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JgJ-KG-Zg6">
-                                <rect key="frame" x="101" y="350" width="118" height="36"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JgJ-KG-Zg6">
+                                <rect key="frame" x="85" y="350" width="150" height="36"/>
                                 <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="uZh-S6-ILe"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <size key="titleShadowOffset" width="2" height="2"/>
@@ -157,9 +160,12 @@
                                     </textField>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zea-hE-U2y">
-                                <rect key="frame" x="131" y="396" width="59" height="36"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zea-hE-U2y">
+                                <rect key="frame" x="110" y="394" width="100" height="36"/>
                                 <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Y4W-5A-o1i"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <size key="titleShadowOffset" width="2" height="2"/>
@@ -184,6 +190,7 @@
                     </view>
                     <connections>
                         <outlet property="nbPushUps" destination="Nfw-WS-ENI" id="uMx-Kh-Fqd"/>
+                        <segue destination="Bbd-aS-4wV" kind="show" identifier="backHome" id="yoP-Gw-eif"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wha-WO-ihn" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -297,7 +304,7 @@
         <!--Home-->
         <scene sceneID="kdq-bG-mn9">
             <objects>
-                <viewController id="Bbd-aS-4wV" customClass="Home" customModule="EZcoach" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="home" id="Bbd-aS-4wV" customClass="Home" customModule="EZcoach" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VgZ-wJ-Zqs">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="436"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -354,7 +361,7 @@
                                 <segue destination="0bO-Fc-fAZ" kind="show" id="mdu-UY-d2b"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem title="Account" width="125" id="Que-TG-haQ">
+                        <barButtonItem title="Settings" width="125" id="Que-TG-haQ">
                             <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <segue destination="mDi-Ad-fGp" kind="show" id="Iec-jT-1Nf"/>
@@ -786,7 +793,7 @@
     <inferredMetricsTieBreakers>
         <segue reference="5xo-7q-gcI"/>
         <segue reference="Iec-jT-1Nf"/>
-        <segue reference="2sf-eo-2MW"/>
-        <segue reference="Uyl-Ry-5SD"/>
+        <segue reference="mdu-UY-d2b"/>
+        <segue reference="yoP-Gw-eif"/>
     </inferredMetricsTieBreakers>
 </document>
