@@ -6,12 +6,14 @@
 //  Copyright © 2018 Thomas Guillaume. All rights reserved.
 //
 
+import AVFoundation
 import UIKit
 
 class TimerTest: UIViewController {
 
     var timer = Timer()
     var time = 60
+    var player: AVAudioPlayer!
     
     @IBOutlet weak var timerLabel: UILabel!
     
@@ -20,6 +22,18 @@ class TimerTest: UIViewController {
         super.viewDidLoad()
 
         self.view.backgroundColor = UIColor.darkGray
+        
+        // Verify if sound activated in the settings before playing a sound
+        if let x = UserDefaults.standard.object(forKey : "sound") as? Bool {
+            if x == true {
+                // Tweet sound.
+                let systemSoundID: SystemSoundID = 1016
+                
+                // Play the sound
+                AudioServicesPlaySystemSound (systemSoundID)
+            }
+        }
+        
         
         // Start the timer
         timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(fireTimer), userInfo: nil, repeats: true)
@@ -39,6 +53,16 @@ class TimerTest: UIViewController {
                 timerLabel.text = "00:\(time)"
             }
         } else {
+            // Play a sound
+            if let x = UserDefaults.standard.object(forKey : "sound") as? Bool {
+                if x == true {
+                    // Tweet sound.
+                    let systemSoundID: SystemSoundID = 1016
+                    
+                    // Play the sound
+                    AudioServicesPlaySystemSound (systemSoundID)
+                }
+            }
             goTo(view: "endTest")
         }
     }
